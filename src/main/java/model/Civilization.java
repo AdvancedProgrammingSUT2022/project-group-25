@@ -1,2 +1,4 @@
-package model;public class Civilization {
+package model;
+
+public class Civilization {
 }
