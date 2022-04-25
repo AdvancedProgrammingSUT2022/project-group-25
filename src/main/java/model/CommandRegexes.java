@@ -14,11 +14,21 @@ public class CommandRegexes {
     }
 
 
-    public static Matcher menuEnterRegex(String command) {
-        return Pattern.compile("menu enter (login Menu|game Menu|profile Menu)").matcher(command);
+    public static Matcher menuEnterRegex(String command, String regex) {
+        return Pattern.compile(regex).matcher(command);
     }
 
     public static Matcher playerRegexCheck(String command, int i) {
         return Pattern.compile("-(p|-player)" + i + " (?<username>\\S+)").matcher(command);
+    }
+
+
+    public static Matcher nicknameChangeRegex(String command) {
+        return Pattern.compile("profile change -(n|-nickname) (\\S+)").matcher(command);
+    }
+
+    public static Matcher changePasswordRegex(String command) {
+        return Pattern.compile("profile change -(p|-password) -(c|-current) (\\S+) -(n|-new) (\\S+)").matcher(command);
+
     }
 }

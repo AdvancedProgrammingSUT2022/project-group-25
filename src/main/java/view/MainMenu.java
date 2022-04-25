@@ -34,7 +34,7 @@ public class MainMenu extends Menu {
                 Menu.setLoggedInUser(null);
                 break;
             } else if (command.startsWith("menu enter")) {
-                matcher = CommandRegexes.menuEnterRegex(command);
+                matcher = CommandRegexes.menuEnterRegex(command,"menu enter (login|game|profile) Menu");
                 if (matcher.find()) {
                     enterMenu(matcher.group(1));
                 }
@@ -44,8 +44,8 @@ public class MainMenu extends Menu {
                 else if ((players = MainMenuController.checkIsValidUsername(count, command)) == null)
                     System.out.println("some usernames are invalid");
                 else {
-                   GameMenu gameMenu = new GameMenu(players);
-                   gameMenu.run();
+                    GameMenu gameMenu = new GameMenu(players);
+                    gameMenu.run();
                 }
             }
 
@@ -56,14 +56,14 @@ public class MainMenu extends Menu {
 
     private void enterMenu(String group) {
         switch (group) {
-            case "game Menu":
+            case "game":
                 UtilityClass.write("navigation is not possible");
                 break;
-            case "profile Menu":
+            case "profile":
                 ProfileMenu profileMenu = new ProfileMenu();
                 profileMenu.run();
                 break;
-            case "Login Menu":
+            case "login":
                 UtilityClass.write("please first log out");
                 break;
         }

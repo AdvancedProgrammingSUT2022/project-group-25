@@ -1,16 +1,18 @@
 package view;
 
 
+import controller.GameMenuController;
 import model.User;
 
 import java.util.ArrayList;
 
 public class GameMenu extends Menu{
-    ArrayList<User>players;
+    GameMenuController gameMenuController;
+
 
     GameMenu(ArrayList<User>users){
         super("game Menu");
-        players = users;
+        gameMenuController = new GameMenuController(users);
     }
 
     @Override
