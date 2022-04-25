@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MainMenuController{
+public class MainMenuController {
 
     public static int countMatches(String input) {
         Matcher matcher = Pattern.compile("(p|-player)[0-9]+ (?<username>\\S+)").matcher(input);
@@ -46,6 +46,12 @@ public class MainMenuController{
     }
 
     private static User isExistUsername(String username) {
+        ArrayList<User> users = User.getUsers();
+        for (User user : users) {
+            if (user.getName().equals(username))
+                return user;
+        }
+        return null;
     }
 
 
