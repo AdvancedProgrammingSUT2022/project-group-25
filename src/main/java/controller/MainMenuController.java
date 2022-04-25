@@ -1,4 +1,4 @@
-package controller.menuControllers;
+package controller;
 
-public class MainMenuController {
+public class MainMenuController{
 }
