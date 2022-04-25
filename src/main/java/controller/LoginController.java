@@ -2,6 +2,8 @@ package controller;
 
 
 import model.User;
+import view.Menu;
+
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 
@@ -9,11 +11,10 @@ import java.util.regex.Matcher;
 public class LoginController {
 
 
-
     public String registerUser(Matcher matcher) {
-        String name = matcher.group("username");
-        String password = matcher.group("password");
-        String nickname = matcher.group("nickname");
+            String name = matcher.group(2);
+            String password = matcher.group(4);
+            String nickname = matcher.group(6);
         return checkUserExist(name, password, nickname);
     }
 
@@ -21,9 +22,9 @@ public class LoginController {
         ArrayList<User> users = User.getUsers();
         for (User user : users) {
             if (user.getName().equals(name))
-                return "username already exists";
+                return "user with username " + name + " already exists";
             else if (user.getNickname().equals(nickname))
-                return "nickname already exists";
+                return "user with nickname " + nickname + " already exists";
         }
         return createUser(name, password, nickname);
     }
@@ -35,11 +36,13 @@ public class LoginController {
 
 
     public String loginUser(Matcher matcher) {
-        String name = matcher.group("username");
-        String password = matcher.group("password");
-        ArrayList<User>users = User.getUsers();
+        String name = matcher.group(2);
+        String password = matcher.group(4);
+        ArrayList<User> users = User.getUsers();
         for (User user : users) {
             if (user.getName().equals(name) && user.getPassword().equals(password))
+                user.setLoggedIn(true);
+                Menu.loggedInUser = user;
                 return "user logged in";
         }
         return "username and password did not match";

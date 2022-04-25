@@ -4,7 +4,7 @@ import model.User;
 
 public abstract class Menu {
     protected String name;
-    protected User loggedInUser;
+    public static User loggedInUser;
 
     protected Menu(String name){
         this.name = name;
@@ -21,7 +21,11 @@ public abstract class Menu {
         return name;
     }
 
-    public void setLoggedInUser(User loggedInUser) {
-        this.loggedInUser = loggedInUser;
+    public static User getLoggedInUser() {
+        return loggedInUser;
+    }
+
+    public static void setLoggedInUser(User loggedInUser) {
+        Menu.loggedInUser = loggedInUser;
     }
 }

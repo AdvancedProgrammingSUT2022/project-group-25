@@ -7,7 +7,7 @@ public class User {
     private String password;
     private String nickname;
     private boolean isLoggedIn;
-    private static final ArrayList<User> users = new ArrayList<>();
+    private static ArrayList<User> users = new ArrayList<>();
     private int score;
     private Civilization civilization;
 
@@ -16,11 +16,16 @@ public class User {
         setNickname(nickname);
         setPassword(password);
         users.add(this);
+        DataBase.writeUsers(users);
     }
 
 
     public static ArrayList<User> getUsers() {
         return users;
+    }
+
+    public static void setUsers(ArrayList<User> users) {
+        User.users = users;
     }
 
     public String getName() {

@@ -1,13 +1,16 @@
 package view;
 
-import java.util.Scanner;
+
+import model.User;
+
+import java.util.ArrayList;
 
 public class GameMenu extends Menu{
-    private static final Scanner scanner = new Scanner(System.in);
+    ArrayList<User>players;
 
-
-    private GameMenu(){
+    GameMenu(ArrayList<User>users){
         super("game Menu");
+        players = users;
     }
 
     @Override
