@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class ProfileMenu extends Menu{
     private static final Scanner scanner = new Scanner(System.in);
 
-    private ProfileMenu(String name) {
-        super(name);
+    private ProfileMenu() {
+        super("profile Menu");
     }
 
     @Override
@@ -14,13 +14,4 @@ public class ProfileMenu extends Menu{
 
     }
 
-    @Override
-    public void enterMenu(String menuName) {
-
-    }
-
-    @Override
-    public void menuExit() {
-
-    }
 }

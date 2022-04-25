@@ -2,12 +2,12 @@ package controller;
 
 
 import model.User;
-import view.Menu;
-
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 
+
 public class LoginController {
+
 
 
     public String registerUser(Matcher matcher) {
@@ -34,4 +34,14 @@ public class LoginController {
     }
 
 
+    public String loginUser(Matcher matcher) {
+        String name = matcher.group("username");
+        String password = matcher.group("password");
+        ArrayList<User>users = User.getUsers();
+        for (User user : users) {
+            if (user.getName().equals(name) && user.getPassword().equals(password))
+                return "user logged in";
+        }
+        return "username and password did not match";
+    }
 }

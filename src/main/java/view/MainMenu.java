@@ -15,14 +15,6 @@ public class MainMenu extends Menu{
 
     }
 
-    @Override
-    public void enterMenu(String menuName) {
 
-    }
-
-    @Override
-    public void menuExit() {
-
-    }
 
 }

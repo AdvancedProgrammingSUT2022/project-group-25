@@ -15,15 +15,6 @@ public class GameMenu extends Menu{
 
     }
 
-    @Override
-    public void enterMenu(String menuName) {
-
-    }
-
-    @Override
-    public void menuExit() {
-
-    }
 
 
 }

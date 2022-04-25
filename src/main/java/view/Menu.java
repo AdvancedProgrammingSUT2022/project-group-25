@@ -1,8 +1,10 @@
 package view;
 
+import model.User;
+
 public abstract class Menu {
     protected String name;
-
+    protected User loggedInUser;
 
     protected Menu(String name){
         this.name = name;
@@ -15,8 +17,11 @@ public abstract class Menu {
 
     public abstract void run();
 
-    public abstract void enterMenu(String menuName);
+    public String getName() {
+        return name;
+    }
 
-    public abstract void menuExit();
-
+    public void setLoggedInUser(User loggedInUser) {
+        this.loggedInUser = loggedInUser;
+    }
 }
