@@ -2,7 +2,6 @@ package model;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.w3c.dom.NameList;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -12,7 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 
 public class DataBase {
     public static void writeUsers(ArrayList<User> users) {

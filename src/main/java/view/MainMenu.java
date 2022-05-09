@@ -5,7 +5,6 @@ import model.CommandRegexes;
 import model.User;
 import model.UtilityClass;
 
-import javax.rmi.CORBA.Util;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 
@@ -34,7 +33,7 @@ public class MainMenu extends Menu {
                 Menu.setLoggedInUser(null);
                 break;
             } else if (command.startsWith("menu enter")) {
-                matcher = CommandRegexes.menuEnterRegex(command,"menu enter (login|game|profile) Menu");
+                matcher = CommandRegexes.menuEnterRegex(command, "menu enter (login|game|profile) Menu");
                 if (matcher.find()) {
                     enterMenu(matcher.group(1));
                 }
