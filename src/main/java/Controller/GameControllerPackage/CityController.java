@@ -14,7 +14,7 @@ public class CityController {
     public String delete() {
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city is not selected";
         city.deleteCity();
         return "city deleted";
     }
@@ -27,29 +27,29 @@ public class CityController {
             return "coordination is invalid";
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city is not selected";
         for (Terrain terrain : city.getTerrains()) {
             for (Terrain terrain1 : terrain.getSurroundingTerrain()) {
                 if (terrain1 == coordination.getTerrain()) {
                     if (terrain1.getCivilization() == null) {
                         GameDataBase.getCurrentCivilization().getGold().addCurrentGold(-10);
-                        /// gheimat tile = 10;
+                        ///cost tile = 10;
                         city.addTerrain(terrain1);
                         GameDataBase.getCurrentCivilization()
                                 .updateNotification("bought a terrain on " + terrain1.getCoordination().toString());
-                        return "kharide shod";
+                        return "bought";
                     } else
-                        return "in terrain sahab dare";
+                        return "this terrain is already under ownership of others";
                 }
             }
         }
-        return "in terrain dar mahdoode kharid shoma nist va ddoore";
+        return "the selected terrain is not approachable";
     }
 
     public String showCityInfo() {
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city not selected";
         city.update();
         return city.getDetails() + city.getDemographics() + "\n" + city.showMakingUnit();
     }
@@ -62,19 +62,19 @@ public class CityController {
             return "coordination is invalid";
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city not selected";
         if (!city.getTerrains().contains(coordination.getTerrain()))
-            return "in tile male shoma nist";
+            return "this tile is not yours";
 
         for (int i = 0; i < city.getCitizens().size(); i++) {
             if (city.getCitizens().get(i) == null) {
                 city.getCitizens().set(i, coordination.getTerrain());
                 city.update();
                 GameDataBase.getCurrentCivilization().updateNotification("set a citizen on " + coordination.toString());
-                return "anjam shod";
+                return "done";
             }
         }
-        return "hame citizen ha mashghool kar hastand";
+        return "all citizen are busy";
     }
 
     public String removeCitizen(Matcher matcher) {
@@ -85,21 +85,21 @@ public class CityController {
             return "coordination is invalid";
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city not selected";
         if (!city.getTerrains().contains(coordination.getTerrain()))
-            return "in tile male shoma nist";
+            return "this tile is not yours";
         for (int i = 0; i < city.getCitizens().size(); i++) {
             if (city.getCitizens().get(i).getCoordination().equal(coordination))
                 if (city.getCitizens().get(i) == null)
-                    return "in bikar bood az ghabl";
+                    return "this citizen was not working";
                 else {
                     city.getCitizens().set(i, null);
                     GameDataBase.getCurrentCivilization()
                             .updateNotification("citizen on " + coordination.toString() + " is now unemployed");
-                    return "in citizen bikar shod";
+                    return "this citizen is now free of duty";
                 }
         }
-        return "hich citizeni inja aslan kar nemikone";
+        return "there is no citizen working here";
     }
 
     public String moveCitizen(Matcher matcher) {
@@ -115,27 +115,27 @@ public class CityController {
             return "coordination is invalid";
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city not selected";
         if (!city.getTerrains().contains(first.getTerrain()))
-            return "in tile male shoma nist";
+            return "this tile is not yours";
         if (!city.getTerrains().contains(second.getTerrain()))
-            return "in tile male shoma nist";
+            return "this tile is not yours";
 
         for (int i = 0; i < city.getCitizens().size(); i++) {
             if (city.getCitizens().get(i) == first.getTerrain()) {
                 city.getCitizens().set(i, second.getTerrain());
                 city.update();
-                return "move shod";
+                return "moved";
             }
         }
-        return "citizeni dar mabda dar hale kar nist";
+        return "no citizen is working at the origin position";
     }
 
     public String showBuildings() {
         StringBuilder buildingString = new StringBuilder();
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city not selected";
         int i = 0;
         buildingString.append("*BUILDINGS*\n");
         for (BuildingType building : city.buildingsCanBeBuilt()) {
@@ -152,7 +152,7 @@ public class CityController {
         StringBuilder unitString = new StringBuilder();
         City city = (City) GameDataBase.getSelected();
         if (city == null)
-            return "city select nashode";
+            return "city not selected";
         int i = 0;
         unitString.append("*UINTS*\n");
         ArrayList<UnitType> unitTypes = city.unitsCanBeBuilt();
@@ -172,14 +172,14 @@ public class CityController {
         int number = Integer.parseInt(matcher.group("number"));
         City city = (City) GameDataBase.getSelected();
         if (city == null) {
-            return "city select nashode";
+            return "city not selected";
         }
         ArrayList<BuildingType> buildings = city.buildingsCanBeBuilt();
         if (number > buildings.size() || number < 1) {
             return "invalid number";
         }
         if (!city.getCivilization().equals(GameDataBase.getCurrentCivilization())) {
-            return "in tile male shoma nist";
+            return "this tile is not yours";
         }
         city.createBuilding(buildings.get(number - 1));
         GameDataBase.getCurrentCivilization().updateNotification(
@@ -191,14 +191,14 @@ public class CityController {
         int number = Integer.parseInt(matcher.group("number"));
         City city = (City) GameDataBase.getSelected();
         if (city == null) {
-            return "city select nashode";
+            return "city not selected";
         }
         ArrayList<BuildingType> buildings = city.buildingsCanBeBuilt();
         if (number > buildings.size() || number < 1) {
             return "invalid number";
         }
         if (!city.getCivilization().equals(GameDataBase.getCurrentCivilization())) {
-            return "in tile male shoma nist";
+            return "this tile is not yours";
         }
         if (buildings.get(number - 1).getCost() > GameDataBase.getCurrentCivilization().getGold().getCurrentGold()) {
             return "You don't have enough money to buy this unit";
@@ -213,14 +213,14 @@ public class CityController {
         int number = Integer.parseInt(matcher.group("number"));
         City city = (City) GameDataBase.getSelected();
         if (city == null) {
-            return "city select nashode";
+            return "city not selected";
         }
         ArrayList<UnitType> units = city.unitsCanBeBuilt();
         if (number > units.size() || number < 1) {
             return "invalid number";
         }
         if (!city.getCivilization().equals(GameDataBase.getCurrentCivilization())) {
-            return "in tile male shoma nist";
+            return "this tile is not yours";
         }
         if (units.get(number - 1).equals(UnitType.SETTLER)
                 && ((City) GameDataBase.getSelected()).getCitizens().size() < 2) {
@@ -236,14 +236,14 @@ public class CityController {
         int number = Integer.parseInt(matcher.group("number"));
         City city = (City) GameDataBase.getSelected();
         if (city == null) {
-            return "city select nashode";
+            return "city not selected";
         }
         ArrayList<UnitType> units = city.unitsCanBeBuilt();
         if (number > units.size() || number < 1) {
             return "invalid number";
         }
         if (!city.getCivilization().equals(GameDataBase.getCurrentCivilization())) {
-            return "in tile male shoma nist";
+            return "this tile is not yours";
         }
         if (units.get(number - 1).getCost() > GameDataBase.getCurrentCivilization().getGold().getCurrentGold()) {
             return "You don't have enough money to buy this unit";
