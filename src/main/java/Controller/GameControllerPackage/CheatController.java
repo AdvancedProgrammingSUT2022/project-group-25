@@ -25,7 +25,8 @@ public class CheatController {
         GameDataBase.getCurrentCivilization().getGold().setAddedFromCheat(
                 GameDataBase.getCurrentCivilization().getGold().getAddedFromCheat() + number
         );
-        return "cash ziad eyne hatami balam az zamane khatami\nadded. your current gold was : " + GameDataBase.getCurrentCivilization().getGold().getCurrentGold();
+        return "\n extra gold added. your current gold was : " + GameDataBase.getCurrentCivilization().getGold().getCurrentGold();
+
 
     }
 
@@ -106,7 +107,7 @@ public class CheatController {
         new Settler(
                 new Coordination(x, y).getTerrain(),
                 GameDataBase.getCurrentCivilization());
-        return "setller added";
+        return "settler added";
     }
 
     public String openTechnologies() {
