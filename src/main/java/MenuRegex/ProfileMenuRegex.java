@@ -1,4 +1,4 @@
-package com.civilization.MenuRegex;
+package MenuRegex;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
@@ -14,7 +14,7 @@ public enum ProfileMenuRegex {
     EXIT("^menu exit");
 
     private final String regex;
-    private static final ArrayList<ProfileMenuRegex> changePasswordRegexes = new ArrayList<>() {
+    private static final ArrayList<ProfileMenuRegex> changePasswordRegexes = new ArrayList<ProfileMenuRegex>() {
         {
             add(CHANGE_PASSWORD1);
             add(CHANGE_PASSWORD2);

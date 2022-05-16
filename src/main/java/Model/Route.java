@@ -1,25 +1,25 @@
-package com.civilization.Model;
+package Model;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
+import Controller.GameControllerPackage.GameDataBase;
 
 import java.util.ArrayList;
 
 public class Route {
-    ArrayList<Coordination> coordinations;
+    ArrayList<Coordination> coordination;
     int mp;
 
     public Route(){
-        coordinations = new ArrayList<>();
+        coordination = new ArrayList<>();
         mp = 0;
     }
 
     public void addTerrain(int x, int y) {
-        coordinations.add(new Coordination(x, y));
+        coordination.add(new Coordination(x, y));
         mp += GameDataBase.getMainMap().getTerrain(x, y).getMp();
     }
 
     public ArrayList<Coordination> getRouteCoordinations() {
-        return coordinations;
+        return coordination;
     }
 
     public int getMp() {

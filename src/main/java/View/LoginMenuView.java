@@ -1,10 +1,10 @@
-package com.civilization.View;
+package View;
 
 import java.util.Scanner;
 
 
-import com.civilization.Controller.LoginMenuController;
-import com.civilization.MenuRegex.LoginMenuRegex;
+import Controller.LoginMenuController;
+import MenuRegex.LoginMenuRegex;
 
 public class LoginMenuView extends View {
     private final LoginMenuController LoginMenuController;

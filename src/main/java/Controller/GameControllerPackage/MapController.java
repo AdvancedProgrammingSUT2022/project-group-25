@@ -1,18 +1,18 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 
-import com.civilization.Model.ConsoleColors;
-import com.civilization.Model.Map;
-import com.civilization.Model.Pair;
-import com.civilization.Model.Improvements.Improvement;
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.TechnologyPackage.TechnologyType;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainState;
-import com.civilization.Model.Terrains.TerrainType;
+import Model.ConsoleColors;
+import Model.Map;
+import Model.Pair;
+import Model.Improvements.Improvement;
+import Model.Resources.Resource;
+import Model.TechnologyPackage.TechnologyType;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainState;
+import Model.Terrains.TerrainType;
 
 public class MapController {
 
@@ -32,7 +32,7 @@ public class MapController {
         TerrainType type = terrain.getType();
         if (type == TerrainType.DESERT) {
             return ConsoleColors.BROWN_BACKGROUND;
-        } else if (type == TerrainType.GRASSLLAND) {
+        } else if (type == TerrainType.GRASSLAND) {
             return ConsoleColors.LIGHTGREEN_BACKGROUND;
         } else if (type == TerrainType.HILLS) {
             return ConsoleColors.DARKGREEN_BACKGROUND;

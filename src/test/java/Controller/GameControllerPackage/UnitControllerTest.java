@@ -1,12 +1,12 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Units.MilitaryUnit;
-import com.civilization.Model.Units.Settler;
-import com.civilization.Model.Units.Unit;
+import Model.Civilization;
+import Model.Units.MilitaryUnit;
+import Model.Units.Settler;
+import Model.Units.Unit;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;

@@ -1,4 +1,4 @@
-package com.civilization.Model.Terrains;
+package Model.Terrains;
 
 public enum TerrainState {
     VISIBLE,

@@ -1,8 +1,8 @@
-package com.civilization.Controller;
+package Controller;
 
 import java.util.regex.Matcher;
 
-import com.civilization.MenuRegex.ProfileMenuRegex;
+import MenuRegex.ProfileMenuRegex;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;

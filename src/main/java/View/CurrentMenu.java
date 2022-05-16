@@ -1,4 +1,4 @@
-package com.civilization.View;
+package View;
 
 public enum CurrentMenu {
     MainMenu, GameMenu, ProfileMenu, LoginMenu, EndGame;

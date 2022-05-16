@@ -1,7 +1,7 @@
-package com.civilization.Controller;
+package Controller;
 
-import com.civilization.MenuRegex.LoginMenuRegex;
-import com.civilization.View.CurrentMenu;
+import MenuRegex.LoginMenuRegex;
+import View.CurrentMenu;
 
 import java.util.Objects;
 import java.util.regex.Matcher;

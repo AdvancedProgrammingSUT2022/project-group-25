@@ -1,11 +1,11 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
 import java.util.Objects;
 
-import com.civilization.Model.City;
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Units.Unit;
-import com.civilization.Model.Units.UnitType;
+import Model.City;
+import Model.Civilization;
+import Model.Units.Unit;
+import Model.Units.UnitType;
 
 public class InfoController {
     public String showResearch() {

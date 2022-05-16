@@ -1,16 +1,16 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 
-import com.civilization.Model.City;
-import com.civilization.Model.Coordination;
-import com.civilization.Model.Improvements.Improvement;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainState;
-import com.civilization.Model.Terrains.TerrainType;
-import com.civilization.Model.Units.*;
+import Model.City;
+import Model.Coordination;
+import Model.Improvements.Improvement;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainState;
+import Model.Terrains.TerrainType;
+import Model.Units.*;
 
 public class UnitController {
 

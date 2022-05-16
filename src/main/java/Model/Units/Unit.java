@@ -1,12 +1,12 @@
-package com.civilization.Model.Units;
+package Model.Units;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Coordination;
-import com.civilization.Model.Selectable;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainType;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.Civilization;
+import Model.Coordination;
+import Model.Selectable;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainType;
 
 import java.util.ArrayList;
 

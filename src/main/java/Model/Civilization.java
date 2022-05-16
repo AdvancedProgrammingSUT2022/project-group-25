@@ -1,10 +1,10 @@
-package com.civilization.Model;
+package Model;
 
-import com.civilization.Model.Info.*;
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainState;
-import com.civilization.Model.Units.Unit;
+import Model.Info.*;
+import Model.Resources.Resource;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainState;
+import Model.Units.Unit;
 
 import java.util.ArrayList;
 
@@ -131,7 +131,7 @@ public class Civilization {
     }
 
     public void resetNotification() {
-        this.notification.resetNotifiction();
+        this.notification.resetNotification();
     }
 
     public String getName() {
@@ -173,7 +173,7 @@ public class Civilization {
     }
 
     public void nextTurn() {
-        this.notification.resetNotifiction();
+        this.notification.resetNotification();
         updateData();
         getHappiness().nexTurn();
         getGold().addCurrentGold(getGold().getAdditionGold());

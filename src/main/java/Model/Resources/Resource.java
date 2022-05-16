@@ -1,9 +1,9 @@
-package com.civilization.Model.Resources;
+package Model.Resources;
 
-import com.civilization.Model.Improvements.Improvement;
-import com.civilization.Model.TechnologyPackage.TechnologyType;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.TerrainType;
+import Model.Improvements.Improvement;
+import Model.TechnologyPackage.TechnologyType;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.TerrainType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ public enum Resource {
     }}, Improvement.PASTURE, null, ResourceMainType.BONUS),
 
     CATTLE(1, 0, 0, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
     }}, Improvement.PASTURE, null, ResourceMainType.BONUS),
 
     DEER(1, 0, 0, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
@@ -24,31 +24,31 @@ public enum Resource {
     }}, Improvement.CAMP, null, ResourceMainType.BONUS),
 
     SHEEP(1, 0, 0, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.DESERT);
         add(TerrainType.HILLS);
     }}, Improvement.PASTURE, null, ResourceMainType.BONUS),
 
     WHEAT(1, 0, 0, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         //TODO add jolge
     }}, Improvement.FARM, null, ResourceMainType.BONUS),
 
     COAL(0, 1, 0, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.HILLS);
     }}, Improvement.MINE, TechnologyType.SCIENTIFICTHEORY, ResourceMainType.STRATEGIC),
 
     HORSE(0, 1, 0, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.TUNDRA);
-    }}, Improvement.PASTURE, TechnologyType.ANIMALHUSBANDARY, ResourceMainType.STRATEGIC),
+    }}, Improvement.PASTURE, TechnologyType.ANIMALHUSBANDRY, ResourceMainType.STRATEGIC),
 
     IRON(0, 1, 0, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.DESERT);
         add(TerrainType.TUNDRA);
@@ -57,7 +57,7 @@ public enum Resource {
     }}, Improvement.MINE, TechnologyType.IRONWORKING, ResourceMainType.STRATEGIC),
 
     COTTON(0, 0, 2, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.DESERT);
     }}, Improvement.PLANTATION, null, ResourceMainType.LUXURY),
@@ -74,7 +74,7 @@ public enum Resource {
 
     GEMS(0, 0, 3, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
         add(TerrainFeature.JUNGLE);
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.DESERT);
         add(TerrainType.TUNDRA);
@@ -82,7 +82,7 @@ public enum Resource {
     }}, Improvement.MINE, null, ResourceMainType.LUXURY),
 
     GOLD(0, 0, 2, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.DESERT);
         add(TerrainType.HILLS);
@@ -98,7 +98,7 @@ public enum Resource {
     }}, Improvement.CAMP, null, ResourceMainType.LUXURY),
 
     MARBLE(0, 0, 2, new ArrayList<TerrainTypeOrTerrainFeatureType>() {{
-        add(TerrainType.GRASSLLAND);
+        add(TerrainType.GRASSLAND);
         add(TerrainType.PLAIN);
         add(TerrainType.DESERT);
         add(TerrainType.TUNDRA);

@@ -1,6 +1,6 @@
-package com.civilization.Model.Buildings;
+package Model.Buildings;
 
-import com.civilization.Model.TechnologyPackage.TechnologyType;
+import Model.TechnologyPackage.TechnologyType;
 
 import java.util.ArrayList;
 
@@ -53,7 +53,7 @@ public enum BuildingType implements BuildingNote {
 
         }
     },
-    CIRCUS(150, 3, TechnologyType.HORSEBACKRIDING) {
+    CIRCUS(150, 3, TechnologyType.HORSEBACKRIDINGS) {
         @Override
         public void doNote() {
 
@@ -71,7 +71,7 @@ public enum BuildingType implements BuildingNote {
 
         }
     },
-    STABLE(100, 1, TechnologyType.HORSEBACKRIDING) {
+    STABLE(100, 1, TechnologyType.HORSEBACKRIDINGS) {
         @Override
         public void doNote() {
 

@@ -1,4 +1,4 @@
-package com.civilization.Model;
+package Model;
 
 public class Notification {
     private StringBuilder stringBuilder;
@@ -7,7 +7,7 @@ public class Notification {
         this.stringBuilder = new StringBuilder();
     }
 
-    public void resetNotifiction() {
+    public void resetNotification() {
         this.stringBuilder = new StringBuilder();
     }
 

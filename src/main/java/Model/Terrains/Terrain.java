@@ -1,20 +1,20 @@
-package com.civilization.Model.Terrains;
+package Model.Terrains;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.City;
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Coordination;
-import com.civilization.Model.Improvements.Improvement;
-import com.civilization.Model.Pair;
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Units.MilitaryUnit;
-import com.civilization.Model.Units.Unit;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.City;
+import Model.Civilization;
+import Model.Coordination;
+import Model.Improvements.Improvement;
+import Model.Pair;
+import Model.Resources.Resource;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Units.MilitaryUnit;
+import Model.Units.Unit;
 
 import java.util.ArrayList;
 
 public class Terrain {
-    private final Pair<Improvement, Boolean> improvement; // boolean salem boodan roo mide ke age kharabe bayad repair beshe
+    private final Pair<Improvement, Boolean> improvement;
     private boolean hasRoad;
     private TerrainType type;
     private ArrayList<TerrainFeature> terrainFeatures;
@@ -161,7 +161,7 @@ public class Terrain {
                 }
             }
         }
-        System.err.println("ERROR! setCivilization-Terrain(civilization ma paytakht nadare!)");
+        System.err.println("ERROR! setCivilization-Terrain(capital!!!)");
         throw new RuntimeException();
 
     }

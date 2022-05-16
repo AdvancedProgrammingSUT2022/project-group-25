@@ -1,13 +1,13 @@
-package com.civilization.Model.Buildings;
+package Model.Buildings;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.City;
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Units.CombatType;
-import com.civilization.Model.Units.Unit;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.City;
+import Model.Civilization;
+import Model.Resources.Resource;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
+import Model.Units.CombatType;
+import Model.Units.Unit;
 
 import java.util.ArrayList;
 

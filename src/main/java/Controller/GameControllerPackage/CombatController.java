@@ -1,10 +1,10 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
-import com.civilization.Model.City;
-import com.civilization.Model.Coordination;
-import com.civilization.Model.Units.MilitaryUnit;
-import com.civilization.Model.Units.SiegeMilitaryUnit;
-import com.civilization.Model.Units.Unit;
+import Model.City;
+import Model.Coordination;
+import Model.Units.MilitaryUnit;
+import Model.Units.SiegeMilitaryUnit;
+import Model.Units.Unit;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;

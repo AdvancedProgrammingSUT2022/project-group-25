@@ -1,4 +1,4 @@
-package com.civilization.Controller;
+package Controller;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,8 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.regex.Matcher;
 
-import com.civilization.MenuRegex.LoginMenuRegex;
-import com.civilization.Model.User;
+import MenuRegex.LoginMenuRegex;
+import Model.User;
 
 public class MenuNavigateLoginMenuTest {
     @Test

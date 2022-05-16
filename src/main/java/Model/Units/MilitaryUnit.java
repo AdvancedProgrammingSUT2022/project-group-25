@@ -1,8 +1,8 @@
-package com.civilization.Model.Units;
+package Model.Units;
 
-import com.civilization.Model.City;
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Terrains.Terrain;
+import Model.City;
+import Model.Civilization;
+import Model.Terrains.Terrain;
 
 public class MilitaryUnit extends Unit {
     private boolean isInAlert;

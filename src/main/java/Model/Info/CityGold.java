@@ -1,4 +1,4 @@
-package com.civilization.Model.Info;
+package Model.Info;
 
 public class CityGold {
     private double additionGold;

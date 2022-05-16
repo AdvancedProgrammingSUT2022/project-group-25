@@ -1,8 +1,8 @@
-package com.civilization.Model.Terrains;
+package Model.Terrains;
 
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.Resources.TerrainTypeOrTerrainFeatureType;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
+import Model.Resources.Resource;
+import Model.Resources.TerrainTypeOrTerrainFeatureType;
+import Model.TerrainFeatures.TerrainFeature;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ public enum TerrainType implements TerrainTypeOrTerrainFeatureType {
             add(Resource.SHEEP);
         }
     }),
-    GRASSLLAND(2, 0, 0, -33, 1, new ArrayList<TerrainFeature>() {
+    GRASSLAND(2, 0, 0, -33, 1, new ArrayList<TerrainFeature>() {
         {
             add(TerrainFeature.RIVER);
             add(TerrainFeature.FOREST);

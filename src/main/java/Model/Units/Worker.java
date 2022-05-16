@@ -1,10 +1,10 @@
-package com.civilization.Model.Units;
+package Model.Units;
 
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Improvements.Improvement;
-import com.civilization.Model.Pair;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
+import Model.Civilization;
+import Model.Improvements.Improvement;
+import Model.Pair;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
 
 public class Worker extends Unit {
     private Pair<Improvement, Integer> makingImprovement;

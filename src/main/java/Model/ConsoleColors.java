@@ -1,4 +1,4 @@
-package com.civilization.Model;
+package Model;
 
 public class ConsoleColors {
     // Reset

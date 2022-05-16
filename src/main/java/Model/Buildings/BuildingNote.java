@@ -1,4 +1,4 @@
-package com.civilization.Model.Buildings;
+package Model.Buildings;
 
 public interface BuildingNote {
     public void doNote();

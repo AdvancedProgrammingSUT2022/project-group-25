@@ -1,9 +1,9 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
-import com.civilization.Model.*;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainType;
-import com.civilization.Model.Units.Settler;
+import Model.*;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainType;
+import Model.Units.Settler;
 
 import java.util.*;
 

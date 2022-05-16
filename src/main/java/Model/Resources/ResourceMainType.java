@@ -1,4 +1,4 @@
-package com.civilization.Model.Resources;
+package Model.Resources;
 
 public enum ResourceMainType {
     BONUS,

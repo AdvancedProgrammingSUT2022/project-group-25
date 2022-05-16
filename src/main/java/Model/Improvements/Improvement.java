@@ -1,18 +1,17 @@
-package com.civilization.Model.Improvements;
+package Model.Improvements;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.Resources.TerrainTypeOrTerrainFeatureType;
-import com.civilization.Model.TechnologyPackage.TechnologyType;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainType;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.Resources.Resource;
+import Model.Resources.TerrainTypeOrTerrainFeatureType;
+import Model.TechnologyPackage.TechnologyType;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainType;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public enum Improvement {
-    //TODO .. bazaiash vaght sakhte shodan jangal ya chizaye digaro az bein mibare
     CAMP(6, 0, 0, 0, new ArrayList<Resource>() {
         {
             add(Resource.IVORY);
@@ -33,7 +32,7 @@ public enum Improvement {
         }
     }, TechnologyType.AGRICULTURE, new ArrayList<TerrainTypeOrTerrainFeatureType>() {
         {
-            add(TerrainType.GRASSLLAND);
+            add(TerrainType.GRASSLAND);
             add(TerrainType.PLAIN);
             add(TerrainType.DESERT);
         }
@@ -69,9 +68,9 @@ public enum Improvement {
             add(Resource.CATTLE);
             add(Resource.SHEEP);
         }
-    }, TechnologyType.ANIMALHUSBANDARY, new ArrayList<TerrainTypeOrTerrainFeatureType>() {
+    }, TechnologyType.ANIMALHUSBANDRY, new ArrayList<TerrainTypeOrTerrainFeatureType>() {
         {
-            add(TerrainType.GRASSLLAND);
+            add(TerrainType.GRASSLAND);
             add(TerrainType.PLAIN);
             add(TerrainType.DESERT);
             add(TerrainType.TUNDRA);
@@ -89,7 +88,7 @@ public enum Improvement {
         }
     }, TechnologyType.CALENDER, new ArrayList<TerrainTypeOrTerrainFeatureType>() {
         {
-            add(TerrainType.GRASSLLAND);
+            add(TerrainType.GRASSLAND);
             add(TerrainType.PLAIN);
             add(TerrainType.DESERT);
             add(TerrainFeature.FOREST);
@@ -104,7 +103,7 @@ public enum Improvement {
         }
     }, TechnologyType.MASONRY, new ArrayList<TerrainTypeOrTerrainFeatureType>() {
         {
-            add(TerrainType.GRASSLLAND);
+            add(TerrainType.GRASSLAND);
             add(TerrainType.PLAIN);
             add(TerrainType.DESERT);
             add(TerrainType.TUNDRA);
@@ -113,7 +112,7 @@ public enum Improvement {
     }),
     TRADINGPOST(8, 0, 0, 1, new ArrayList<>(), TechnologyType.TRAPPING, new ArrayList<TerrainTypeOrTerrainFeatureType>() {
         {
-            add(TerrainType.GRASSLLAND);
+            add(TerrainType.GRASSLAND);
             add(TerrainType.PLAIN);
             add(TerrainType.DESERT);
             add(TerrainType.TUNDRA);
@@ -121,7 +120,7 @@ public enum Improvement {
     }),
     FACTORY(0, 0, 2, 0, new ArrayList<>(), TechnologyType.ENGINEERING, new ArrayList<TerrainTypeOrTerrainFeatureType>() {//turn nadasht
         {
-            add(TerrainType.GRASSLLAND);
+            add(TerrainType.GRASSLAND);
             add(TerrainType.PLAIN);
             add(TerrainType.DESERT);
             add(TerrainType.TUNDRA);

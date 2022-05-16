@@ -1,10 +1,10 @@
-package com.civilization.Model.Units;
+package Model.Units;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.City;
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainType;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.City;
+import Model.Civilization;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainType;
 
 public class Settler extends Unit {
     public Settler(Terrain terrain, Civilization civilization) {

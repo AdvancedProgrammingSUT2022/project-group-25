@@ -1,7 +1,7 @@
-package com.civilization.Model.Units;
+package Model.Units;
 
-import com.civilization.Model.Civilization;
-import com.civilization.Model.Terrains.Terrain;
+import Model.Civilization;
+import Model.Terrains.Terrain;
 
 public class SiegeMilitaryUnit extends MilitaryUnit {
 

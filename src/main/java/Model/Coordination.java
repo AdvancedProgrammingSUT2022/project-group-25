@@ -1,7 +1,7 @@
-package com.civilization.Model;
+package Model;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.Terrains.Terrain;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.Terrains.Terrain;
 
 public class Coordination {
     int x, y;

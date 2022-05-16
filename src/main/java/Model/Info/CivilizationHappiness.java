@@ -1,8 +1,8 @@
-package com.civilization.Model.Info;
+package Model.Info;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.City;
-import com.civilization.Model.Civilization;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.City;
+import Model.Civilization;
 
 public class CivilizationHappiness {
     private int additionHappiness;

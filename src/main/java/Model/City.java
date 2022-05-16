@@ -1,15 +1,15 @@
-package com.civilization.Model;
+package Model;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.Buildings.BuildingAffect;
-import com.civilization.Model.Buildings.BuildingType;
-import com.civilization.Model.Info.CityFood;
-import com.civilization.Model.Info.CityGold;
-import com.civilization.Model.Info.CityProduct;
-import com.civilization.Model.Info.CityScience;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Units.*;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.Buildings.BuildingAffect;
+import Model.Buildings.BuildingType;
+import Model.Info.CityFood;
+import Model.Info.CityGold;
+import Model.Info.CityProduct;
+import Model.Info.CityScience;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
+import Model.Units.*;
 
 import java.util.ArrayList;
 

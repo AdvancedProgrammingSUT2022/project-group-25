@@ -1,8 +1,8 @@
-package com.civilization.Controller;
+package Controller;
 
 import java.util.regex.Matcher;
 
-import com.civilization.Model.User;
+import Model.User;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;

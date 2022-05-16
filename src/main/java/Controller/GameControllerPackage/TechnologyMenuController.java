@@ -1,7 +1,7 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
-import com.civilization.Model.Info.CivilizationTechnologies;
-import com.civilization.Model.TechnologyPackage.TechnologyType;
+import Model.Info.CivilizationTechnologies;
+import Model.TechnologyPackage.TechnologyType;
 
 import java.util.Map;
 import java.util.regex.Matcher;

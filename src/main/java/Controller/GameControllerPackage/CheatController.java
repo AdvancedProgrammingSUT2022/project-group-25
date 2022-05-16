@@ -1,11 +1,11 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
-import com.civilization.Model.Coordination;
-import com.civilization.Model.Info.CivilizationTechnologies;
-import com.civilization.Model.Units.MilitaryUnit;
-import com.civilization.Model.Units.Settler;
-import com.civilization.Model.Units.Unit;
-import com.civilization.Model.Units.UnitType;
+import Model.Coordination;
+import Model.Info.CivilizationTechnologies;
+import Model.Units.MilitaryUnit;
+import Model.Units.Settler;
+import Model.Units.Unit;
+import Model.Units.UnitType;
 
 import java.util.ArrayList;
 import java.util.HashMap;

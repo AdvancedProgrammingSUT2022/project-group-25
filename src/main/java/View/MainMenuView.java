@@ -1,9 +1,9 @@
-package com.civilization.View;
+package View;
 
 import java.util.Scanner;
 
-import com.civilization.Controller.MainMenuController;
-import com.civilization.MenuRegex.MainMenuRegex;
+import Controller.MainMenuController;
+import MenuRegex.MainMenuRegex;
 
 public class MainMenuView extends View {
     private final MainMenuController MainMenuController;

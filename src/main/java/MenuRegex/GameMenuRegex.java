@@ -1,4 +1,4 @@
-package com.civilization.MenuRegex;
+package MenuRegex;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
@@ -117,49 +117,49 @@ public enum GameMenuRegex {
         this.regex = regex;
     }
 
-    private static final ArrayList<GameMenuRegex> showMapRegexes = new ArrayList<>() {
+    private static final ArrayList<GameMenuRegex> showMapRegexes = new ArrayList<GameMenuRegex>() {
         {
             add(SHOW_MAP1);
             add(SHOW_MAP2);
         }
     };
 
-    private static final ArrayList<GameMenuRegex> moveRegexes = new ArrayList<>() {
+    private static final ArrayList<GameMenuRegex> moveRegexes = new ArrayList<GameMenuRegex>() {
         {
             add(MOVE1);
             add(MOVE2);
         }
     };
 
-    private static final ArrayList<GameMenuRegex> showDetailsRegexes = new ArrayList<>() {
+    private static final ArrayList<GameMenuRegex> showDetailsRegexes = new ArrayList<GameMenuRegex>() {
         {
             add(SHOW_DETAILS1);
             add(SHOW_DETAILS2);
         }
     };
 
-    private static final ArrayList<GameMenuRegex> attackRegexes = new ArrayList<>() {
+    private static final ArrayList<GameMenuRegex> attackRegexes = new ArrayList<GameMenuRegex>() {
         {
             add(ATTACK1);
             add(ATTACK2);
         }
     };
 
-    private static final ArrayList<GameMenuRegex> selectCityCoordinateRegexes = new ArrayList<>() {
+    private static final ArrayList<GameMenuRegex> selectCityCoordinateRegexes = new ArrayList<GameMenuRegex>() {
         {
             add(SELECT_CITY_COORDINATE1);
             add(SELECT_CITY_COORDINATE2);
         }
     };
 
-    private static final ArrayList<GameMenuRegex> setCitizenRegexes = new ArrayList<>() {
+    private static final ArrayList<GameMenuRegex> setCitizenRegexes = new ArrayList<GameMenuRegex>() {
         {
             add(SET_CITIZEN1);
             add(SET_CITIZEN2);
         }
     };
 
-    private static final ArrayList<GameMenuRegex> moveCitizenRegexes = new ArrayList<>() {
+    private static final ArrayList<GameMenuRegex> moveCitizenRegexes = new ArrayList<GameMenuRegex>() {
         {
             add(MOVE_CITIZEN1);
             add(MOVE_CITIZEN2);

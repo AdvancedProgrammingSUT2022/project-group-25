@@ -1,16 +1,44 @@
-package com.civilization.Model.TechnologyPackage;
+package Model.TechnologyPackage;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import com.civilization.Model.Buildings.BuildingType;
-import com.civilization.Model.Improvements.Improvement;
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.Units.UnitType;
+import Model.Buildings.BuildingType;
+import Model.Improvements.Improvement;
+import Model.Resources.Resource;
+import Model.Units.UnitType;
 
 public enum TechnologyType {
     AGRICULTURE("agriculture", 20, new ArrayList<TechnologyType>()
-    ), POTTERY("pottery", 35, new ArrayList<TechnologyType>() {
+    ),CALENDER("calender", 70, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.POTTERY);
+        }
+    }), MASONRY("masonry", 55, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.MINING);
+        }
+    }), THEWHEEL("the wheel", 55, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.ANIMALHUSBANDRY);
+        }
+    }), TRAPPING("trapping", 55, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.ANIMALHUSBANDRY);
+        }
+    }), WRITING("writing", 55, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.POTTERY);
+        }
+    }), CONSTRUCTION("construction", 100, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.MASONRY);
+        }
+    }), HORSEBACKRIDINGS("horse back riding", 100, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.THEWHEEL);
+        }
+    }), POTTERY("pottery", 35, new ArrayList<TechnologyType>() {
         {
             add(TechnologyType.AGRICULTURE);
         }
@@ -18,7 +46,7 @@ public enum TechnologyType {
         {
             add(TechnologyType.AGRICULTURE);
         }
-    }), ANIMALHUSBANDARY("animal husbandry", 35, new ArrayList<TechnologyType>() {
+    }), ANIMALHUSBANDRY("animal husbandry", 35, new ArrayList<TechnologyType>() {
         {
             add(TechnologyType.AGRICULTURE);
         }
@@ -30,35 +58,7 @@ public enum TechnologyType {
         {
             add(TechnologyType.MINING);
         }
-    }), CALENDER("calender", 70, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.POTTERY);
-        }
-    }), MASONRY("masonary", 55, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.MINING);
-        }
-    }), THEWHEEL("the wheel", 55, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.ANIMALHUSBANDARY);
-        }
-    }), TRAPPING("trapping", 55, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.ANIMALHUSBANDARY);
-        }
-    }), WRITING("writing", 55, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.POTTERY);
-        }
-    }), CONSTRUCTION("construction", 100, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.MASONRY);
-        }
-    }), HORSEBACKRIDING("horse back riding", 100, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.THEWHEEL);
-        }
-    }), IRONWORKING("iron working", 150, new ArrayList<TechnologyType>() {
+    }),  IRONWORKING("iron working", 150, new ArrayList<TechnologyType>() {
         {
             add(TechnologyType.BRONZEWORKING);
         }
@@ -83,13 +83,44 @@ public enum TechnologyType {
     }), CHIVALRY("chivalry", 440, new ArrayList<TechnologyType>() {
         {
             add(TechnologyType.CIVILSERVICE);
-            add(TechnologyType.HORSEBACKRIDING);
+            add(TechnologyType.HORSEBACKRIDINGS);
             add(TechnologyType.CURRENCY);
         }
     }), THEOLOGY("theology", 250, new ArrayList<TechnologyType>() {
         {
             add(TechnologyType.CALENDER);
             add(TechnologyType.PHILOSOPHY);
+        }
+    }), ECONOMICS("economics", 900, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.BANKING);
+            add(TechnologyType.PRINTINGPRESS);
+        }
+    }), FERTILIZER("fertilizer", 1300, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.CHEMISTRY);
+        }
+    }), METALLURGY("metallurgy", 900, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.GUNPOWDER);
+        }
+    }), MILITARYSCIENCE("military science", 1300, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.ECONOMICS);
+            add(TechnologyType.CHEMISTRY);
+        }
+    }), RIFLING("rifling", 1425, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.METALLURGY);
+        }
+    }), SCIENTIFICTHEORY("scientific theory", 1300, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.ACOUSTICS);
+        }
+    }), BIOLOGY("biology", 1680, new ArrayList<TechnologyType>() {
+        {
+            add(TechnologyType.ARCHAEOLOGY);
+            add(TechnologyType.SCIENTIFICTHEORY);
         }
     }), EDUCATION("education", 440, new ArrayList<TechnologyType>() {
         {
@@ -99,11 +130,6 @@ public enum TechnologyType {
         {
             add(TechnologyType.MATHEMATICS);
             add(TechnologyType.CONSTRUCTION);
-            //6221061078032721
-            //EASTER EGG
-            //payam taebi shomare kart
-            //man I'm your servant
-            //anything which is your karam please pour
         }
     }), MACHINERY("machinery", 440, new ArrayList<TechnologyType>() {
         {
@@ -148,37 +174,6 @@ public enum TechnologyType {
         {
             add(TechnologyType.MACHINERY);
             add(TechnologyType.PHYSICS);
-        }
-    }), ECONOMICS("economics", 900, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.BANKING);
-            add(TechnologyType.PRINTINGPRESS);
-        }
-    }), FERTILIZER("fertilizer", 1300, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.CHEMISTRY);
-        }
-    }), METALLURGY("metallurgy", 900, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.GUNPOWDER);
-        }
-    }), MILITARYSCIENCE("military science", 1300, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.ECONOMICS);
-            add(TechnologyType.CHEMISTRY);
-        }
-    }), RIFLING("rifling", 1425, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.METALLURGY);
-        }
-    }), SCIENTIFICTHEORY("scientific theory", 1300, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.ACOUSTICS);
-        }
-    }), BIOLOGY("biology", 1680, new ArrayList<TechnologyType>() {
-        {
-            add(TechnologyType.ARCHAEOLOGY);
-            add(TechnologyType.SCIENTIFICTHEORY);
         }
     }), STEAMPOWER("steam power", 1680, new ArrayList<TechnologyType>() {
         {

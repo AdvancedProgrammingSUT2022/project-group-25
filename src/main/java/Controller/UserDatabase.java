@@ -1,6 +1,6 @@
-package com.civilization.Controller;
+package Controller;
 
-import com.civilization.Model.User;
+import Model.User;
 import com.google.gson.Gson;
 
 import java.io.File;

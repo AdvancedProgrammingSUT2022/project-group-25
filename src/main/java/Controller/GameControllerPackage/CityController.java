@@ -1,10 +1,10 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
-import com.civilization.Model.Buildings.BuildingType;
-import com.civilization.Model.City;
-import com.civilization.Model.Coordination;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Units.UnitType;
+import Model.Buildings.BuildingType;
+import Model.City;
+import Model.Coordination;
+import Model.Terrains.Terrain;
+import Model.Units.UnitType;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;

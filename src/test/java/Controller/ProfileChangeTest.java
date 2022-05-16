@@ -1,11 +1,11 @@
-package com.civilization.Controller;
+package Controller;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.regex.Matcher;
 
-import com.civilization.MenuRegex.ProfileMenuRegex;
-import com.civilization.Model.User;
+import MenuRegex.ProfileMenuRegex;
+import Model.User;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.AfterEach;

@@ -1,4 +1,4 @@
-package com.civilization.MenuRegex;
+package MenuRegex;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;

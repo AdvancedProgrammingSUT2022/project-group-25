@@ -1,4 +1,4 @@
-package com.civilization.View;
+package View;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

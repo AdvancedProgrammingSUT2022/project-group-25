@@ -1,8 +1,8 @@
-package com.civilization.Model.Info;
+package Model.Info;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.Civilization;
-import com.civilization.Model.TechnologyPackage.TechnologyType;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.Civilization;
+import Model.TechnologyPackage.TechnologyType;
 
 import java.util.ArrayList;
 import java.util.HashMap;

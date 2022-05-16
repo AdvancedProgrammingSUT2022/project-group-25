@@ -1,7 +1,7 @@
-package com.civilization.Model.Info;
+package Model.Info;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Model.Civilization;
+import Controller.GameControllerPackage.GameDataBase;
+import Model.Civilization;
 
 public class CivilizationScience {
     private double additionScience;
