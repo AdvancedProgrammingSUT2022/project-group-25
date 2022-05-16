@@ -21,7 +21,7 @@ public class MainMenuView extends View {
             if ((matcher = MainMenuRegex.getMatcher(input, MainMenuRegex.ENTER)) != null)
                 System.out.println(MainMenuController.menuNavigate(matcher));
             else if ((matcher = MainMenuRegex.getMatcher(input, MainMenuRegex.EXIT)) != null)
-                System.out.println("use logout method");
+                System.out.println("log out please");
             else if ((matcher = MainMenuRegex.getMatcher(input, MainMenuRegex.SHOW_CURRENT_MENU)) != null)
                 System.out.println(CurrentMenu.get());
             else if ((matcher = MainMenuRegex.getMatcher(input, MainMenuRegex.LOGOUT)) != null)

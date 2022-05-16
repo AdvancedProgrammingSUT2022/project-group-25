@@ -33,7 +33,7 @@ public class UserDatabase {
             reader.close();
             users.addAll(userArrayList);
         } catch (IOException e) {
-            System.err.println("ERROR! in loading UserDatabase[JSON]");
+            System.err.println("ERROR! in loading UserDatabase[json]");
             throw new RuntimeException(e);
         }
     }
@@ -45,7 +45,7 @@ public class UserDatabase {
             gson.toJson(users, writer);
             writer.close();
         } catch (IOException e) {
-            System.err.println("ERROR! in SavingUser[JSON]");
+            System.err.println("ERROR! in SavingUser[json]");
             throw new RuntimeException(e);
         }
     }
@@ -98,15 +98,6 @@ public class UserDatabase {
         }
         return null;
     }
-
-    static public User findUserByPassword(String password) {
-        for (User user : users) {
-            if (Objects.equals(user.getPassword(), password))
-                return user;
-        }
-        return null;
-    }
-
     static public User findUserByNickname(String nickname) {
         for (User user : users) {
             if (Objects.equals(user.getNickname(), nickname))

@@ -34,14 +34,14 @@ public class MainMenuController extends Controller {
     public String playGame(String input) {
         ArrayList<String> usernames = MainMenuRegex.PlayGameRegexConvertToPlayers(input);
         if (usernames == null) return "you entered wrong number";
-        ArrayList<User> users = new ArrayList<User>();
+        ArrayList<User> users = new ArrayList<>();
         for (String username : usernames) {
             if (UserDatabase.findUserByUsername(username) == null)
                 return "user with username " + username + " doesn't exist";
             users.add(UserDatabase.findUserByUsername(username));
         }
         if (users.size() <= 1)
-            return "ba kam tar az 2 nafar nemishe bazi kard";
+            return "number of players must be at least 2";
         GameDataBase.runGameForFirstTime(users);
         CurrentMenu.set(CurrentMenu.GameMenu);
         return "you entered Game Menu";

@@ -62,7 +62,7 @@ public class LoginMenuController extends Controller {
 
     public String logout() {
         if (UserDatabase.getCurrentUser() == null)
-            return "useri login nakarde hanooz";
+            return "no users are currently logged in so far";
         UserDatabase.setCurrentUser(null);
         return "logged out";
     }
