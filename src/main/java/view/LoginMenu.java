@@ -1,7 +1,5 @@
 package view;
 
-import enums.LoginMenuCommands;
-
 import java.util.regex.Matcher;
 
 public class LoginMenu {
