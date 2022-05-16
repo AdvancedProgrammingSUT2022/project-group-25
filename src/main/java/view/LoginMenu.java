@@ -1,6 +1,5 @@
 package view;
 
-import controller.LoginMenuController;
 import controller.UtilityClass;
 import enums.LoginMenuCommands;
 
