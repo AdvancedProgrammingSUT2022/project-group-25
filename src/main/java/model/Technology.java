@@ -19,24 +19,6 @@ public class Technology {
     }
 
     public String getName() {
-        return name;
-    }
 
-    public int getCost() {
-        return cost;
-    }
-
-    public ArrayList<Technology> getNeededTechnologies() {
-        return neededTechnologies;
-    }
-
-    public static List<TechnologyEnum> getAllTechnologies() {
-        return allTechnologies;
-    }
-
-    public boolean equals(Technology other) {
-        if (this.name.equals(other.name))
-            return true;
-        return false;
     }
 }
