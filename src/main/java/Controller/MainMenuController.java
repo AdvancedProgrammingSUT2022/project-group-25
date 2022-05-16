@@ -1,9 +1,9 @@
-package com.civilization.Controller;
+package Controller;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.MenuRegex.MainMenuRegex;
-import com.civilization.Model.User;
-import com.civilization.View.CurrentMenu;
+import Controller.GameControllerPackage.GameDataBase;
+import MenuRegex.MainMenuRegex;
+import Model.User;
+import View.CurrentMenu;
 
 import java.util.ArrayList;
 import java.util.Objects;

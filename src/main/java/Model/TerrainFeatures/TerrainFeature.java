@@ -1,7 +1,7 @@
-package com.civilization.Model.TerrainFeatures;
+package Model.TerrainFeatures;
 
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.Resources.TerrainTypeOrTerrainFeatureType;
+import Model.Resources.Resource;
+import Model.Resources.TerrainTypeOrTerrainFeatureType;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public enum TerrainFeature implements TerrainTypeOrTerrainFeatureType {
             add(Resource.SUGAR);
         }
     }),
-    FOREST(1, 1, 0, 25, 2, new ArrayList<Resource>() {//jangal
+    FOREST(1, 1, 0, 25, 2, new ArrayList<Resource>() {
         {
             add(Resource.DEER);
             add(Resource.FURS);
@@ -21,7 +21,7 @@ public enum TerrainFeature implements TerrainTypeOrTerrainFeatureType {
         }
     }),
     ICE(0, 0, 0, 0, Integer.MAX_VALUE, new ArrayList<>()),
-    JUNGLE(1, -1, 0, 25, 2, new ArrayList<Resource>() {//jangal anbooh
+    JUNGLE(1, -1, 0, 25, 2, new ArrayList<Resource>() {
         {
             add(Resource.BANANA);
             add(Resource.GEMS);

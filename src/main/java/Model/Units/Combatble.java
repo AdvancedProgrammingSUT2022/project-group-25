@@ -1,4 +1,4 @@
-package com.civilization.Model.Units;
+package Model.Units;
 
 public interface Combatble {
     void attack(Combatble target);
