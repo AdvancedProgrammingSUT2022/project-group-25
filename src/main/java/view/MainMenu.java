@@ -1,6 +1,5 @@
 package view;
 
-import enums.MainMenuCommands;
 import model.User;
 
 import java.util.ArrayList;
