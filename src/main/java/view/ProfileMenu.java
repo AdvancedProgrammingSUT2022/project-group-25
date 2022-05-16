@@ -1,6 +1,5 @@
 package view;
 
-import controller.ProfileMenuController;
 import controller.UtilityClass;
 import enums.ProfileMenuCommands;
 
