@@ -1,7 +1,5 @@
 package model;
 
-import controller.GameController;
-
 import java.util.ArrayList;
 
 public class City {
