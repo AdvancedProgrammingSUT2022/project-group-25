@@ -1,7 +1,5 @@
 package view;
 
-import enums.ProfileMenuCommands;
-
 import java.util.regex.Matcher;
 
 public class ProfileMenu {
