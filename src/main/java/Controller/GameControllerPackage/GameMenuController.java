@@ -1,9 +1,9 @@
-package com.civilization.Controller.GameControllerPackage;
+package Controller.GameControllerPackage;
 
-import com.civilization.Controller.Controller;
-import com.civilization.Model.*;
-import com.civilization.Model.Units.Unit;
-import com.civilization.View.CurrentMenu;
+import Controller.Controller;
+import Model.*;
+import Model.Units.Unit;
+import View.CurrentMenu;
 
 import java.util.Objects;
 import java.util.regex.Matcher;

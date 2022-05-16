@@ -1,9 +1,9 @@
-package com.civilization.View;
+package View;
 
 import java.util.Scanner;
 
-import com.civilization.Controller.ProfileMenuController;
-import com.civilization.MenuRegex.ProfileMenuRegex;
+import Controller.ProfileMenuController;
+import MenuRegex.ProfileMenuRegex;
 
 public class ProfileMenuView extends View {
     private final ProfileMenuController ProfileMenuController;

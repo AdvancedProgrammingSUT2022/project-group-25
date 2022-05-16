@@ -1,9 +1,9 @@
-package com.civilization.Model;
+package Model;
 
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.TerrainFeatures.TerrainFeature;
-import com.civilization.Model.Terrains.Terrain;
-import com.civilization.Model.Terrains.TerrainType;
+import Model.Resources.Resource;
+import Model.TerrainFeatures.TerrainFeature;
+import Model.Terrains.Terrain;
+import Model.Terrains.TerrainType;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -166,7 +166,7 @@ public class MainMap extends Map {
             {
                 add(TerrainType.DESERT);
                 add(TerrainType.HILLS);
-                add(TerrainType.GRASSLLAND);
+                add(TerrainType.GRASSLAND);
                 add(TerrainType.MOUNTAIN);
                 add(TerrainType.PLAIN);
                 add(TerrainType.SNOW);
