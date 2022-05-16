@@ -1,12 +1,10 @@
 package view;
 
-import controller.MainMenuController;
 import controller.UtilityClass;
 import enums.MainMenuCommands;
 import model.User;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.regex.Matcher;
 
 public class MainMenu {
