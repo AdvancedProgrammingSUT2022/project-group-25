@@ -1,9 +1,9 @@
-package com.civilization.View;
+package View;
 
-import com.civilization.Controller.GameControllerPackage.GameDataBase;
-import com.civilization.Controller.GameControllerPackage.GameMenuController;
-import com.civilization.Controller.GameControllerPackage.MapController;
-import com.civilization.MenuRegex.GameMenuRegex;
+import Controller.GameControllerPackage.GameDataBase;
+import Controller.GameControllerPackage.GameMenuController;
+import Controller.GameControllerPackage.MapController;
+import MenuRegex.GameMenuRegex;
 
 import java.util.Objects;
 import java.util.Scanner;
