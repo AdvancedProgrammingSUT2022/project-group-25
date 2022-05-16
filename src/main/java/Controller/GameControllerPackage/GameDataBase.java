@@ -10,7 +10,7 @@ import java.util.*;
 public class GameDataBase {
     static private int turn;
     static private MainMap mainMap;
-    static private ArrayList<User> players; //ina bazi mikonan avalesh inja sabt mishe
+    static private ArrayList<User> players;
     static private User currentUser;
     static private Civilization currentCivilization;
     static private HashMap<User, Civilization> civilizations;
