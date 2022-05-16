@@ -1,7 +1,7 @@
-package com.civilization.Model.Units;
+package Model.Units;
 
-import com.civilization.Model.Resources.Resource;
-import com.civilization.Model.TechnologyPackage.TechnologyType;
+import Model.Resources.Resource;
+import Model.TechnologyPackage.TechnologyType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ public enum UnitType {
     },
     CATAPULT(100, CombatType.SIEGE, 4, 14, 2, 2, Resource.IRON, TechnologyType.MATHEMATICS) {
     },
-    HORSEMAN(80, CombatType.MOUNTED, 12, 0, 1, 4, Resource.HORSE, TechnologyType.HORSEBACKRIDING) {
+    HORSEMAN(80, CombatType.MOUNTED, 12, 0, 1, 4, Resource.HORSE, TechnologyType.HORSEBACKRIDINGS) {
 
     },
     SWORDSMAN(80, CombatType.MELEE, 11, 0, 1, 2, Resource.IRON, TechnologyType.IRONWORKING) {
