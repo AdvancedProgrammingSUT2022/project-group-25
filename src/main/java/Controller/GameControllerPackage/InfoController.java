@@ -14,7 +14,7 @@ public class InfoController {
 
     public String showHappines() {
         Civilization civilization = GameDataBase.getCurrentCivilization();
-        return "happines : " + civilization.getHappiness().getAdditionHappiness();
+        return "happiness : " + civilization.getHappiness().getAdditionHappiness();
     }
 
     public String showUnits() {
@@ -40,8 +40,8 @@ public class InfoController {
     }
 
     public String showVictory() {
-        return "victory nadarim hanooz";
-        // TODO...
+        return "no one is victorious, yet";
+        // todo
     }
 
     public String showDemographics() {
@@ -75,11 +75,11 @@ public class InfoController {
     }
 
     public String showNotification() {
-        String notif = GameDataBase.getCurrentCivilization().getNotification();
-        if (Objects.equals("", notif))
+        String notification = GameDataBase.getCurrentCivilization().getNotification();
+        if (Objects.equals("", notification))
             return "you don't have any notification!";
         else
-            return notif;
+            return notification;
     }
 
     public String resetNotification() {

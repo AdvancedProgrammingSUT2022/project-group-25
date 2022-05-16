@@ -30,7 +30,7 @@ public class CombatController {
                 path.remove(0);
             }
         else
-            return "bish az 1 turn mikhad va mojaz nist";
+            return "more than 1 turn, not permitted";
         if (!coordinate2.isValidCoordination()) {
             return "Coordinate is not valid!";
         }
@@ -38,7 +38,7 @@ public class CombatController {
             return "No unit selected!";
         }
         if (((Unit) GameDataBase.getSelected()).getCivilization() != GameDataBase.getCurrentCivilization()) {
-            return "selectedo bayad har turn new mikardim";
+            return "the selected one should be renewed each turn";
         }
         if (!(GameDataBase.getSelected() instanceof MilitaryUnit)) {
             return "This is not a military unit!";
@@ -73,7 +73,7 @@ public class CombatController {
         // militaryUnit);
         // TODO fasele city ta oon cordinate ro mikham
         // if (path.size() > 2)
-        // return "doore va attack nemishe";
+        // return "too far to attack";
         if (!coordinate.isValidCoordination()) {
             return "Coordinate is not valid!";
         }
