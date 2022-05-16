@@ -2,12 +2,9 @@ package view;
 
 import model.City;
 import model.Civilization;
-import controller.*;
-import enums.GameMenuCommands;
 import model.*;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.regex.Matcher;
 
 public class GameMenu {
