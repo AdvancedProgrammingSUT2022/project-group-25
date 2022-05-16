@@ -100,8 +100,7 @@ public class MapController {
             for (int j = 0; j < 6; j++) {
                 String backgroundColor;
                 if (j % 2 == 1)
-                    backgroundColor = getBackgroundColor(terrains[x + i + remainder][y + j]);// inja bug dare az size
-                // ararye mizane biroon
+                    backgroundColor = getBackgroundColor(terrains[x + i + remainder][y + j]);//such a hassle, boundary size is yet to be fixed, todo
                 else
                     backgroundColor = getBackgroundColor(terrains[x + i][y + j]);
                 // before entering this function we have checked if it's out of bonds or not
@@ -158,7 +157,7 @@ public class MapController {
         return x;
     }
 
-    private int handelYBoundaries(int y) {
+    private int handleYBoundaries(int y) {
         if (y > Map.getColumn() - 6)
             return Map.getColumn() - 6;
         if (y < 0)
@@ -172,7 +171,7 @@ public class MapController {
 
     public String showMap(int x, int y) {
         x = handelXBoundaries(x, y);
-        y = handelYBoundaries(y);
+        y = handleYBoundaries(y);
 
         if (!isValidTerran(x, y)) {
             return "ERROR x: " + x + " , y: " + y + " in show map is invalid";
@@ -189,9 +188,9 @@ public class MapController {
         drawMap(mapString, x, y);
 
         StringBuilder mapStringBuilder = new StringBuilder();
-        for (int i = 0; i < mapString.length; i++) {
-            for (int j = 0; j < mapString[i].length; j++) {
-                mapStringBuilder.append(mapString[i][j]);
+        for (String[] strings : mapString) {
+            for (String string : strings) {
+                mapStringBuilder.append(string);
             }
             mapStringBuilder.append("\n");
         }
@@ -210,8 +209,7 @@ public class MapController {
             stringBuilder.append("this terrain has a river with following terrains:\n");
             for (Terrain adjTerrain : terrain.getSurroundingTerrain()) {
                 if (adjTerrain.getTerrainFeatures().contains(TerrainFeature.RIVER)) {
-                    stringBuilder.append(
-                            "terrain on x: " + adjTerrain.getXPosition() + " y: " + adjTerrain.getYPosition() + "\n");
+                    stringBuilder.append("terrain on x: ").append(adjTerrain.getXPosition()).append(" y: ").append(adjTerrain.getYPosition()).append("\n");
                 }
             }
         }
