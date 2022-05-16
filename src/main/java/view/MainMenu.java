@@ -1,6 +1,5 @@
 package view;
 
-import controller.UtilityClass;
 import enums.MainMenuCommands;
 import model.User;
 

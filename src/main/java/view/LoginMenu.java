@@ -1,6 +1,5 @@
 package view;
 
-import controller.UtilityClass;
 import enums.LoginMenuCommands;
 
 import java.util.regex.Matcher;

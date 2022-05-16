@@ -1,6 +1,5 @@
 package view;
 
-import controller.UtilityClass;
 import enums.ProfileMenuCommands;
 
 import java.util.regex.Matcher;
