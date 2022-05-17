@@ -10,7 +10,7 @@ import Model.Terrains.TerrainType;
 
 import java.util.ArrayList;
 
-public class Unit implements Combatble, Selectable {
+public class Unit implements Combatable, Selectable {
 
     private int xp;
     private boolean workDone;
@@ -229,13 +229,13 @@ public class Unit implements Combatble, Selectable {
     }
 
     @Override
-    public void attack(Combatble target) {
+    public void attack(Combatable target) {
         System.err.println("in attack nabayad call mishod va attack military unit bayad call she");
         throw new RuntimeException();
     }
 
     @Override
-    public void defend(Combatble target) {
+    public void defend(Combatable target) {
         System.err.println("in defend nabayad call mishod va defend military unit bayad call she");
         throw new RuntimeException();
     }

@@ -72,7 +72,7 @@ public class MilitaryUnit extends Unit {
     }
 
     @Override
-    public void attack(Combatble target) {
+    public void attack(Combatable target) {
         if (target instanceof City) {
             attack((City) target);
         } else if (target instanceof MilitaryUnit) {
@@ -119,7 +119,7 @@ public class MilitaryUnit extends Unit {
                 city.getConqueredBy(this.getCivilization());
     }
 
-    public void defend(Combatble target) {
+    public void defend(Combatable target) {
         if (target instanceof MilitaryUnit) {
             MilitaryUnit targetMilitaryUnit = (MilitaryUnit) target;
             if (targetMilitaryUnit.getMyType().getRangedCombatStrengh() == 0)
@@ -141,7 +141,7 @@ public class MilitaryUnit extends Unit {
             throw new RuntimeException();
     }
 
-    private int attackPenalty(Combatble target) {
+    private int attackPenalty(Combatable target) {
         if (this.getMyType() == UnitType.TANK && target instanceof City)
             return -10;
         if (this.getMyType() == UnitType.ARTILLERY && target instanceof City)
