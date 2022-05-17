@@ -13,7 +13,7 @@ import Model.Units.*;
 
 import java.util.ArrayList;
 
-public class City extends Terrain implements Combatable, Selectable {
+public class City extends Terrain implements Combatble, Selectable {
     private ArrayList<Terrain> citizens; // length=number of citizens and arraylisti az jahaei hast ke citizen ha kar
     // mikonnand
     private boolean isCapital;
@@ -250,7 +250,7 @@ public class City extends Terrain implements Combatable, Selectable {
     }
 
     @Override
-    public void attack(Combatable target) {
+    public void attack(Combatble target) {
         if (target instanceof City) {
             System.err.println("hamle shahr be shahr nadarim");
             throw new RuntimeException();
@@ -266,7 +266,7 @@ public class City extends Terrain implements Combatable, Selectable {
     }
 
     @Override
-    public void defend(Combatable target) {
+    public void defend(Combatble target) {
         attack(target);
     }
 

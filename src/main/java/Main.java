@@ -1,3 +1,5 @@
+package com.civilization;
+
 import Controller.GameControllerPackage.GameMenuController;
 import Controller.LoginMenuController;
 import Controller.MainMenuController;

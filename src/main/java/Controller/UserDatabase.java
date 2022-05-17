@@ -58,6 +58,14 @@ public class UserDatabase {
         return false;
     }
 
+    static public boolean isUsernameDuplicate(String username) {
+        for (User user : users) {
+            if (Objects.equals(user.getUsername(), username))
+                return true;
+        }
+        return false;
+    }
+
     static public boolean isNicknameDuplicate(User user) {
         for (User user1 : users) {
             if (Objects.equals(user1.getNickname(), user.getNickname()))
